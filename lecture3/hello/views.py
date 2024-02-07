@@ -9,3 +9,7 @@ def index(request):
 
 def tomek(request):
     return HttpResponse("Hello, Tomek")
+
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}!")

@@ -4,11 +4,15 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request, "hello/index.html")
+    return HttpResponse("Hello, world!")
 
 
 def tomek(request):
     return HttpResponse("Hello, Tomek")
+
+
+def david(request):
+    return HttpResponse("Hello, David")
 
 
 def greet(request, name):
